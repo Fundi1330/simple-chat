@@ -1,11 +1,11 @@
 //player join to server
 mc.listen('onJoin', function(Player){
-    mc.broadcast('§2 + ' + '§e' + Player.realName + ' §9Присоеденился к серверу')
+    mc.broadcast('§2 + ' + '§e' + Player.realName + ' §9Join to server')
     return false
 })
 //player left from server
 mc.listen('onLeft', function(Player){
-    mc.broadcast('§4 - ' + '§e' + Player.realName + ' §9Вышел с сервера')
+    mc.broadcast('§4 - ' + '§e' + Player.realName + ' §9Left from server')
     return false
 })
 mc.listen('onChat', function(Player, msg) {
